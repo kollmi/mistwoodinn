@@ -41,34 +41,56 @@ public class Narrative {
                     You return back to the entrance of the inn and open the door again.
                     """;
             case "enterInn" -> """
-                    You step inside the inn. Behind a wooden podium stands a young man, his blond
-                    hair extending down his back. His cheery smile stirs a pleasant warmth within
-                    you.
+                    You step inside the inn. Behind a wooden podium stands a young man in his late
+                    teens, his blond hair extending down his back. His cheery smile has a refreshing
+                    genuine quality to it.
                                         
-                    "Hello there! Welcome to the Mistwood Inn. I'm happy you found us in time before
-                    the storm rolled in. Will you only be staying overnight?"
+                    "Hi! Welcome to the Mistwood Inn. I'm happy you found us in time before the
+                    storm rolled in. Will you only be staying overnight?"
                                         
                     "Yes," you say. "I have to make it to Alabastin by noon tomorrow."
                                         
                     "Excellent," says the young man, his smile now pushing his lips further apart.
-                    "May I have a name for the ledger?"\040""";
-            case "devlinIntro" -> """
-                    "I am Devlin, the sole concierge here at Mistwood Inn. If you ever need anything,
-                    I will always be here!" With that, Devlin hands you a metal key with the number 9
-                    on it. "Up the stairs, to the right," he says with a cordial nod.
+                    "I'm Devlin, the sole innkeeper here at Mistwood Inn. May I have your name for the ledger?"
                     """;
-            case "introChoices" -> """
-                    Enter 1: Go drop your things off in your room
-                    Enter 2: Ask Devlin about the inn's history
-                    Enter 3: Head down the hallway to your left (without going upstairs)
+            case "devlinIntro" -> """
+                    "Ah, yes. You must be thinking, "Devlin, where's the ledger?" Well, that just happens
+                    to be my gift! I have an encyclopedic memory. I know what you're thinking, why waste my
+                    last few years of my gift here at Mistwood? It just happens that this inn is very
+                    near and dear to me, and my gift happens to make running an inn quite easy. I know
+                    every single visitor: when they arrived, left, where they're going to, and, of course,
+                    their name.
+                    """;
+            case "devlinIntro2" -> """
+                    "If you ever need anything,I will always be here!" With that, Devlin hands you a
+                    metal key with the number 9 on it. "Up the stairs, to the right," he says with a
+                    cordial nod.
                     """;
             case "climbStairs" -> """
-                    a
+                    You climb up the wooden staircase, each step exhaling a deep creak as your foot
+                    lands on it. Wax candles line the walls around the steps, each flickering as if
+                    its life depended on it. As you reach the top of the staircase, you see a very
+                    short woman with jet-black hair turn into the hallway from the left. She flashes
+                    a look of concern at you as she knocks on the door next to the one she just left.
                     """;
-            case "innHistory" -> """
-                    b
+            case "innBackstory" -> """
+                    "Ah!" Devlin exclaimed. "I am so glad you asked! No one ever does. I'll keep that
+                    in mind for..." Devlin trailed off. "Anyways, yes, yes. Of course. Despite its
+                    secluded location, Mistwood Inn is well frequented by those who know it. Typically,
+                    the crowd we attract is the merchant type. Some enjoy recounting their epic adventures
+                    in the galley. Others prefer to not commiserate much. Once, Prince Dallio of Regio
+                    himself passed through in complete disguise! We only found out after a royal crow
+                    dropped a note of gratitude and a thousand gold coins off at the front door."
                     """;
-            case "firstFloorHallway" -> """
+            case "innBackstory2" -> """
+                    You almost flinch at the name of Prince Dallio, but hold your composure. Surely Devlin
+                    mentioned that name out of complete coincidence. There was no way he could know of
+                    your mission.
+                    
+                    Enter 1: Ask Devlin more about Prince Dallio's visit
+                    Enter 2: Head upstairs to your room
+                    """;
+            case "innBackstory3" -> """
                     
                     """;
             default -> "";
