@@ -10,7 +10,7 @@ public class mainDriver {
         Narrative narrativeHost = new Narrative();
         System.out.println(narrativeHost.getNarrative("intro1"));
         System.out.println(narrativeHost.getNarrative("intro2"));
-        System.out.println("Do you go back outside to look for the old man? (Yes/No)");
+        System.out.println("Do you go back outside to look for the old man? (Enter Yes or No)");
         String oldManAnswer = input.nextLine();
         //should implement try catch here
         if (oldManAnswer.equals("Yes")){
@@ -24,26 +24,32 @@ public class mainDriver {
         }
         String name = input.nextLine();
         System.out.println("'Ah, I'm so glad you'll be joining us, " + name + ".'");
-        //late night his personality changes
+        System.out.println("Devlin simply stares back at you, not writing anything down.");
         System.out.println(narrativeHost.getNarrative("devlinIntro"));
+        //late night his personality changes??
+        System.out.println(narrativeHost.getNarrative("devlinIntro2"));
         System.out.println("What do you do now?");
-        while (true){
-            //will need to implement error handler here as well
-            System.out.println("Enter 1: Go drop your things off in your room");
-            System.out.println("Enter 2: Ask Devlin about the inn's history");
-            System.out.println("Enter 3: Head down the hallway to your left (without going upstairs)");
-            int introChoice = input.nextInt();
-
-            if(introChoice == 1){
+        //will need to implement error handler here as well
+        System.out.println("Enter 1: Head upstairs to your room");
+        System.out.println("Enter 2: Ask Devlin for more information about the inn");
+        int introChoice = input.nextInt();
+        //inn backstory
+        if(introChoice == 1){
+            System.out.println(narrativeHost.getNarrative("climbStairs"));
+        }
+        else if(introChoice == 2){
+            System.out.println(narrativeHost.getNarrative("innBackstory"));
+            System.out.println(narrativeHost.getNarrative("innBackstory2"));
+            int innChoice = input.nextInt();
+            //another try catch needed
+            if (innChoice == 1){
+                System.out.println(narrativeHost.getNarrative("innBackstory3"));
+            }
+            else if (innChoice == 2) {
                 System.out.println(narrativeHost.getNarrative("climbStairs"));
             }
-            else if(introChoice == 2){
-                System.out.println(narrativeHost.getNarrative("innHistory"));
-            }
-            else if(introChoice == 3){
-                System.out.println(narrativeHost.getNarrative("firstFloorHallway"));
-            }
         }
+
 
 
 
