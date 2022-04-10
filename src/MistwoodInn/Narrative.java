@@ -91,7 +91,7 @@ public class Narrative {
                     Enter 2: Head upstairs to your room
                     """;
             case "innBackstory3" -> """
-                    
+                    "What's happening?"
                     """;
             default -> "";
         };
