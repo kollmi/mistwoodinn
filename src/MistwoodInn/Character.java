@@ -7,9 +7,9 @@ public class Character {
     }
     public String getShortBio(){
         return switch (charName){
-            case "Devlin" -> "Mistwood Inn's round-the-clock concierge";
-            case "Jakob" -> "A weary traveler from Alabastia";
-            default -> "Nobody";
+            case "Devlin" -> "Mistwood Inn's friendly round-the-clock innkeeper";
+            case "Ange" -> "A short, middle-aged detective with jet-black hair";
+            case "Daria" -> "A 14-year old girl who just wants to be left alone";
         };
     }
 }
