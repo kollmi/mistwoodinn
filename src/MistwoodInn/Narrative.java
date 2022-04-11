@@ -20,15 +20,14 @@ public class Narrative {
                     before the snow picks up."
                     """;
             case "intro2" -> """
-                    You immediately relax at the mention of the inn, which you remember
-                    seeing on a map back in Regio. An old man with a heavy-looking
-                    burlap pack makes his way past you. After a few minutes, you are able
-                    to make out a two-story brick building with a steady plume of smoke
-                    emanating from its chimney. The old man gestures at a red wooden door
-                    with a sign spelling "Mistwood Inn" in hand-painted vines. You tie your
-                    horse in a small stable adjacent to the entrance, then swing the door open
-                    and step inside. You turn around to hold the door open for the old man, but
-                    all that greets your eyes are the small drifts of snow beginning to cling to
+                    An old man with a heavy-looking burlap pack makes his way past you. After
+                    a few minutes, you are able to make out a two-story brick building with a
+                    steady plume of smoke emanating from its chimney. The old man gestures at a red
+                    wooden door with a sign spelling "Mistwood Inn" in hand-painted vines.
+                    
+                    You tie your horse in a small stable adjacent to the entrance, then swing the
+                    door open and step inside. You turn around to hold the door open for the old man,
+                    but all that greets your eyes are the small drifts of snow beginning to cling to
                     the birch trees.
                     """;
             case "oldManCheck" -> """
@@ -87,8 +86,8 @@ public class Narrative {
                     mentioned that name out of complete coincidence. There was no way he could know of
                     your mission.
                     
-                    Enter 1: Ask Devlin more about Prince Dallio's visit
-                    Enter 2: Head upstairs to your room
+                    Enter 1: Head upstairs to your room
+                    Enter 2: Ask Devlin more about Prince Dallio's visit
                     """;
             case "innBackstory3" -> """
                     "What's happening?"
