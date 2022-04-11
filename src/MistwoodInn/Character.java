@@ -10,6 +10,7 @@ public class Character {
             case "Devlin" -> "Mistwood Inn's friendly round-the-clock innkeeper";
             case "Ange" -> "A short, middle-aged detective with jet-black hair";
             case "Daria" -> "A 14-year old girl who just wants to be left alone";
+            default -> "";
         };
     }
 }
