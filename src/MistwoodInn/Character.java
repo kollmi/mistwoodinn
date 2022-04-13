@@ -1,7 +1,7 @@
 package MistwoodInn;
 
 public class Character {
-    String charName;
+    private String charName;
     Character(String charName){
         this.charName = charName;
     }
