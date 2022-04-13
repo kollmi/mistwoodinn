@@ -35,7 +35,7 @@ public class Narrative {
                     pair of footprints between the inn's door and the path: yours. However, you do
                     find a small silver coin half-buried in the soft layer of snow.
                                         
-                    Silver Coin has been added to your inventory.
+                    Silver Coin has been added to your bag.
                                         
                     You return back to the entrance of the inn and open the door again.
                     """;
@@ -44,24 +44,24 @@ public class Narrative {
                     teens, his blond hair extending down his back. His cheery smile has a refreshing
                     genuine quality to it.
                                         
-                    "Hi! Welcome to the Mistwood Inn. I'm happy you found us in time before the
-                    storm rolled in. Will you only be staying overnight?"
+                    "Hello there! Welcome to the Mistwood Inn. I'm happy you found us in time before the
+                    storm rolled in. How long will you be staying?"
                                         
-                    "Yes," you say. "I have to make it to Alabastin by noon tomorrow."
+                    "Two nights," you say. "I have to rest up before I make the final leg to Alabastin."
                                         
                     "Excellent," says the young man, his smile now pushing his lips further apart.
                     "I'm Devlin, the sole innkeeper here at Mistwood Inn. May I have your name for the ledger?"
                     """;
             case "devlinIntro" -> """
                     "Ah, yes. You must be thinking, "Devlin, where's the ledger?" Well, that just happens
-                    to be my gift! I have an encyclopedic memory. I know what you're thinking, why waste my
-                    last few years of my gift here at Mistwood? It just happens that this inn is very
-                    near and dear to me, and my gift happens to make running an inn quite easy. I know
+                    to be my Gift! I have an encyclopedic memory. I know what you're thinking, why waste my
+                    last few years of my Gift here at Mistwood? It just happens that this inn is very
+                    near and dear to me, and my Gift happens to make running an inn quite easy. I know
                     every single visitor: when they arrived, left, where they're going to, and, of course,
                     their name.
                     """;
             case "devlinIntro2" -> """
-                    "If you ever need anything,I will always be here!" With that, Devlin hands you a
+                    "If you ever need anything, I'll always be here!" With that, Devlin hands you a
                     metal key with the number 9 on it. "Up the stairs, to the right," he says with a
                     cordial nod.
                     """;
@@ -78,7 +78,7 @@ public class Narrative {
                     secluded location, Mistwood Inn is well frequented by those who know it. Typically,
                     the crowd we attract is the merchant type. Some enjoy recounting their epic adventures
                     in the galley. Others prefer to not commiserate much. Once, Prince Dallio of Regio
-                    himself passed through in complete disguise! We only found out after a royal crow
+                    himself passed through with none of us knowing! We only found out after a royal crow
                     dropped a note of gratitude and a thousand gold coins off at the front door."
                     """;
             case "innBackstory2" -> """
@@ -90,8 +90,37 @@ public class Narrative {
                     Enter 2: Ask Devlin more about Prince Dallio's visit
                     """;
             case "innBackstory3" -> """
-                    "What's happening?"
+                    Devlin laughs aloud. "Prince Dallio seems to have a bit of an admirer! Unfortunately,
+                    I do not know the details of when he visited or how he was dressed. However, I'm sure
+                    he does this sort of thing all the time, given that his Gift is being able to pass
+                    entirely unnoticed. Must be a convenient Gift to have as a prince!"
+                    
+                    You hear the door open behind you, and a scraggly looking middle-aged man walks in behind
+                    you. Devlin greets him, and you move out of his way and up the staircase to your room.
                     """;
+            case "turnCorner" -> """
+                    As you turn around the corner towards your room, you hear a voice come from the other side
+                    of the hallway. "Leave me ALONE, Ange!" You glance back over your shoulder and realize that
+                    it came from behind the door the short woman just knocked on. The short woman noticed your
+                    glare, and returns an even more steely one.
+                    
+                    "I know why you're here," she states very matter-of-factly.
+                    """;
+            case "angeReply1" -> """
+                    Ange sighs, a defeated look overcoming her formerly pinched face. "Fair enough," she says.
+                    """;
+            case "angeReply2" -> """
+                    Ange continues to lock eyes with you, her suspicion seeming to only increase.
+                    """;
+            case "enterRoom" -> """
+                    You break away from Ange's prying eyes and insert your key into the door. It opens with a
+                    meager creak, revealing a room with a narrow but comfortable looking-bed. Above the bed
+                    hangs a picture of a dense forest of birch trees, their branches beginning to accumulate
+                    snow.
+                    
+                    You sit down on the bed and open your bag.
+                    """;
+
             default -> "";
         };
     }
