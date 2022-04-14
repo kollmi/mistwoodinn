@@ -1,6 +1,6 @@
 package MistwoodInn;
 
-public class Narrative {
+public class Narrative{
     Narrative(){
     }
     public String getNarrative (String a){
@@ -101,7 +101,7 @@ public class Narrative {
             case "turnCorner" -> """
                     As you turn around the corner towards your room, you hear a voice come from the other side
                     of the hallway. "Leave me ALONE, Ange!" You glance back over your shoulder and realize that
-                    it came from behind the door the short woman just knocked on. The short woman noticed your
+                    it came from behind the door the short woman just knocked on. The short woman notices your
                     glare, and returns an even more steely one.
                     
                     "I know why you're here," she states very matter-of-factly.
@@ -120,7 +120,61 @@ public class Narrative {
                     
                     You sit down on the bed and open your bag.
                     """;
-
+            case "roomDecision" -> """
+                    You place your bag on the floor and look out the sole window in your room. The setting sun
+                    casts rays of orange and pink onto the birch trees from an unknown direction.
+                    
+                    What do you do now?
+                    
+                    Enter 1: Lay down and rest
+                    Enter 2: Step back into the hallway
+                    """;
+            case "rest" -> """
+                    You hang up your coat and sigh as your head hits the pillow. You reflect on how fortunate
+                    you were to have the old man assist you in finding this place, but simultaneously think back
+                    on the unpleasant encounter in the hallway with the short woman.
+                    
+                    As the last orange and pink hues morph into shadows, you notice wisps of fog start
+                    to crawl through the underbelly of the forest. You step closer to the window to watch
+                    the hauntingly beautiful scene. Through the birch trees, you think you see a figure
+                    walking towards the inn, but the impending darkness does not allow you to discern
+                    apparition from reality.
+                    """;
+            case "room10" -> """
+                    You turn the metal doorknob and step back into the hallway. The door across from yours,
+                    emboldened with a golden 10, is slightly ajar. You don't remember it being open when
+                    you were in the hallway earlier. From the room, you can hear a woman sobbing uncontrollably.
+                    
+                    Do you knock on the door of Room 10?
+                    Enter Yes or No.
+                    """;
+            case "patriceIntro" -> """
+                    The crying stops. "Oh, hello? Who's there? Please, come in. Sorry if you heard all that."
+                    You step into Room 10. A middle-aged woman wearing a lavender jacket wipes the mascara dribble from
+                    around her eyes. She looks up and offers you a weak smile.
+                    
+                    "I'm Patrice. This inn is like a second home for me. When I traveled around Regio and Alabastin
+                    with my caravan, I used to stop here all the time. You see, when you have a Gift like mine,
+                    you want to use it as much as possible. But as soon as you begin to notice the first pockets
+                    of sagging flesh, the wrinkles you pretend aren't there, you start feeling like a shell of yourself.
+                    All the fame associated with my vocal talents and the caravan are gone just as quick. Soon enough
+                    you're replaced with the next up-and-coming doll whose Gift is that much more alluring."
+                    
+                    You return her monologue with a nod of understanding. "Have you heard of the legend of the
+                    Permanence Stone? It's said to be able to stop peoples' Gifts from vanishing altogether, and
+                    restore them if they've already disappeared."
+                    
+                    Patrice glances at you with a mix of skepticism and curiosity. "I have indeed heard of it. It's
+                    said Prince Dallio was close to discovering it, but he disappeared not too long ago. Any dunce
+                    can see the table how it's set, though. He must have found it, then used his Gift to disguise
+                    himself as a commoner. As someone who's had their fair dose of fame, I don't blame him in
+                    the slightest for wanting to escape from it."
+                    
+                    "I agree," you say, not trying to reveal too much. You consider that Patrice may be unaware that
+                    Prince Dallio was last seen here, but her glance from earlier makes you think otherwise.
+                    "It was nice to meet you, Patrice. I'm sure we'll see each other again soon," you say as you step
+                    out of Room 10.
+                    """;
             default -> "";
         };
     }

@@ -8,6 +8,7 @@ public class mainDriver {
         Scanner input = new Scanner(System.in);
         ArrayList<String> bag = new ArrayList<>();
         bag.add("Letter");
+        bag.add("Rations");
         Narrative narrativeHost = new Narrative();
         System.out.println(narrativeHost.getNarrative("intro1"));
         System.out.println(narrativeHost.getNarrative("intro2"));
@@ -86,20 +87,50 @@ public class mainDriver {
         }
         System.out.println(narrativeHost.getNarrative("enterRoom"));
         System.out.println("Bag contents: " + bag);
+
         //bag check
-        System.out.println("Enter the name of an item to inspect it further.");
-        System.out.println("If you are done inspecting items, enter 2.");
         while(true){
+            System.out.println("Enter the name of an item in your bag to inspect it further.");
+            System.out.println("If you are done inspecting your bag, enter Done");
             String bagCheck = input.nextLine();
             Item item1 = new Item();
             if (bag.contains(bagCheck)){
                 System.out.println(item1.getItemInfo(bagCheck));
             }
-            else if (bagCheck.equals("2")){
+            else if (bagCheck.equals("Done")){
                 break;
             }
             else {
-                System.out.println("Incorrect input. Please enter either an item or 2.");
+                System.out.println("Incorrect input. Please enter a valid item or Done");
+            }
+        }
+
+        //hallway or sleep
+        System.out.println(narrativeHost.getNarrative("roomDecision"));
+        while(true){
+            String roomChoice = input.nextLine();
+            if (roomChoice.equals("1")){
+                System.out.println(narrativeHost.getNarrative("rest"));
+                break;
+            }
+            else if (roomChoice.equals("2")){
+                System.out.println(narrativeHost.getNarrative("room10"));
+                while(true){
+                    String patriceChoice = input.nextLine();
+                    if (patriceChoice.equals("Yes")){
+                        System.out.println(narrativeHost.getNarrative("patriceIntro"));
+                    }
+                    else if (patriceChoice.equals("No")){
+                        System.out.println(narrativeHost.getNarrative(""));
+                        break;
+                    }
+                    else{
+                        System.out.println("Incorrect input. Please enter Yes or No.");
+                    }
+                }
+            }
+            else {
+                System.out.println("Incorrect input. Please enter 1 or 2.");
             }
         }
     }
