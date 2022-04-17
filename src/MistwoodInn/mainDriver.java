@@ -110,24 +110,63 @@ public class mainDriver {
         while(true){
             String roomChoice = input.nextLine();
             if (roomChoice.equals("1")){
-                System.out.println(narrativeHost.getNarrative("rest"));
+                System.out.println(narrativeHost.getNarrative("mistRollsIn"));
+                while(true){
+                    String goDownstairs = input.nextLine();
+                    if (goDownstairs.equals("1")){
+                        System.out.println(narrativeHost.getNarrative("nightNoise"));
+                        while(true){
+                            String nightNoise = input.nextLine();
+                            if(nightNoise.equals("1")){
+                                System.out.println(narrativeHost.getNarrative("inspectNoise"));
+                                while (true){
+                                    String intervention = input.nextLine();
+                                    if(intervention.equals("Yes")){
+                                        System.out.println(narrativeHost.getNarrative("interveneYes"));
+                                        while(true){
+                                            String leaveInn = input.nextLine();
+                                            if(leaveInn.equals("Yes")){
+                                                System.out.println(narrativeHost.getNarrative("strandedEnding"));
+                                                break;
+                                            }
+                                            else if (leaveInn.equals("No")){
+                                                //need to write
+                                                System.out.println(narrativeHost.getNarrative("dariaAssassin"));
+                                                break;
+                                            }
+                                            else{System.out.println("Incorrect input. Please enter Yes or No.");}
+                                        }
+                                        break;
+                                    }
+                                    else if (intervention.equals("No")){
+                                        System.out.println(narrativeHost.getNarrative("interveneNo"));
+                                        break;
+                                    }
+                                    else{System.out.println("Incorrect input. Please enter Yes or No.");}
+                                }
+                                break;
+                            }
+                            else if(nightNoise.equals("2")){
+                                System.out.println(narrativeHost.getNarrative("ignoreNoise"));
+                                break;
+                            }
+                            else{System.out.println("Incorrect input. Please enter 1 or 2.");}
+                        }
+                        break;
+                    }
+                    else if (goDownstairs.equals("2")){
+                        System.out.println(narrativeHost.getNarrative("room10"));
+                        System.out.println(narrativeHost.getNarrative("patriceIntro"));
+                        break;
+                    }
+                    else{System.out.println("Incorrect input. Please enter 1 or 2.");}
+                }
                 break;
             }
             else if (roomChoice.equals("2")){
                 System.out.println(narrativeHost.getNarrative("room10"));
-                while(true){
-                    String patriceChoice = input.nextLine();
-                    if (patriceChoice.equals("Yes")){
-                        System.out.println(narrativeHost.getNarrative("patriceIntro"));
-                    }
-                    else if (patriceChoice.equals("No")){
-                        System.out.println(narrativeHost.getNarrative(""));
-                        break;
-                    }
-                    else{
-                        System.out.println("Incorrect input. Please enter Yes or No.");
-                    }
-                }
+                System.out.println(narrativeHost.getNarrative("patriceIntro"));
+                break;
             }
             else {
                 System.out.println("Incorrect input. Please enter 1 or 2.");
