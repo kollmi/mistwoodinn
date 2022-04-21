@@ -130,7 +130,6 @@ public class mainDriver {
                                                 break;
                                             }
                                             else if (leaveInn.equals("No")){
-                                                //need to write
                                                 System.out.println(narrativeHost.getNarrative("dariaAssassin"));
                                                 break;
                                             }
@@ -157,6 +156,7 @@ public class mainDriver {
                     else if (goDownstairs.equals("2")){
                         System.out.println(narrativeHost.getNarrative("room10"));
                         System.out.println(narrativeHost.getNarrative("patriceIntro"));
+                        //supposed to go downstairs
                         break;
                     }
                     else{System.out.println("Incorrect input. Please enter 1 or 2.");}
@@ -166,6 +166,8 @@ public class mainDriver {
             else if (roomChoice.equals("2")){
                 System.out.println(narrativeHost.getNarrative("room10"));
                 System.out.println(narrativeHost.getNarrative("patriceIntro"));
+                //could either force to lie down, or repeat Daria arc as you step into
+                //hallway
                 break;
             }
             else {
