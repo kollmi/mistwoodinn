@@ -16,9 +16,9 @@ public class Item {
                     Find the Permanence Stone, and we can restore Mother's Gift to what it once was.
                     -E
                     """;
-            case "Room 9 Key" -> "A small, metal key that opens the door to Room 9 at the Mistwood Inn.";
-            case "Silver coin" -> "A silver coin that has the face of an old woman on one side and a tree on the other.";
-            case "Rations" -> "Food and water for your journey, including a loaf of bread your cousin baked for you";
+            case "Room 9 Key" -> "A small, metal key that opens the door to Room 9 at the Mistwood Inn.\n";
+            case "Silver coin" -> "A silver coin that has the face of an old woman on one side and a tree on the other.\n";
+            case "Rations" -> "Food and water for your journey, including a loaf of bread your cousin baked for you\n";
             default -> "";
         };
     }
