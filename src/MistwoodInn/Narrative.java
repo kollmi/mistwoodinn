@@ -130,7 +130,7 @@ public class Narrative{
                     Enter 2: Step back into the hallway
                     """;
             case "mistRollsIn" -> """
-                    You hang up your coat and sigh as your head hits the pillow. You reflect on how fortunate
+                    You hang up your coat and sigh as you sit down on the edge of the bed. You reflect on how fortunate
                     you were to have the old man assist you in finding this place, but simultaneously think back
                     on the unpleasant encounter in the hallway with the short woman.
                     
