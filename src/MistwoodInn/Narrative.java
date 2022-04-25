@@ -148,14 +148,14 @@ public class Narrative{
                     You turn the metal doorknob and step back into the hallway. The door across from yours,
                     emboldened with a golden 10, is slightly ajar. You don't remember it being open when
                     you were in the hallway earlier. From the room, you can hear a woman singing a beautiful melody,
-                    only for it to be interrupted by a spasm of sobs.
+                    only for it to be cut short by a spasm of sobs.
                     """;
             case "patriceIntro" -> """
                     You take another step, and the crying stops. "Oh, hello? Who's there? Please, come in. Sorry if
                     you heard all that." You step into Room 10. A middle-aged woman wearing a lavender jacket wipes the
                     mascara dribble from around her eyes. She looks up and offers you a weak smile.
                     
-                    "I'm Patrice. This inn is like a second home for me. When I traveled around Regio and Alabastin
+                    "I'm Patrice. This inn is like a second home for me. When I traveled between Regio and Alabastin
                     with my caravan, I used to stop here all the time. You see, when you have a Gift like mine,
                     you want to use it as much as possible. But as soon as you begin to notice the first pockets
                     of sagging flesh, the wrinkles you pretend aren't there, you start feeling like a shell of yourself.
@@ -170,7 +170,7 @@ public class Narrative{
                     said Prince Dallio was close to discovering it, but he disappeared not too long ago. Any dunce
                     can see the table how it's set, though. He must have found it, then used his Gift to disguise
                     himself as a commoner. As someone who's had their fair dose of fame, I don't blame him in
-                    the slightest for wanting to escape from all of the noise."
+                    the slightest for wanting to escape from all of the spotlight."
                     
                     "I agree," you say, not trying to reveal too much. You consider that Patrice may be unaware that
                     Prince Dallio was last seen here, but her glance from earlier makes you think otherwise.
@@ -187,8 +187,7 @@ public class Narrative{
                     Enter 2: Ignore it and go back to bed
                     """;
             case "ignoreNoise" -> """
-                    You decide the noise is nothing to be worried about. Not long after, you drift easily into a
-                    deep sleep.
+                    You decide the shriek is not your concern. Not long after, you drift easily into a deep sleep.
                     """;
             case "inspectNoise" -> """
                     Still in your room, your open a door a crack. On the other side of the hallway, you see the
@@ -235,10 +234,10 @@ public class Narrative{
                     knowledge from this playthrough, go forth again and find the True Ending!
                     """;
             case "interveneNo" -> """
-                    You take extra care in closing your door quietly. Curiosity bounces off the walls of your brain,
+                    You take extra care to close your door quietly. Curiosity bounces off the walls of your brain,
                     but as soon as you lay down on your bed, your weariness sends you into a deep slumber.
                     """;
-            case "dariaAssassin" -> """
+            case "daria" -> """
                     The short woman laughs. "A poor choice. Everyone, hear me. The guest in Room 10's Gift is ---."
                     She stops talking. Behind her, a tendril of fog shoots out from underneath the shrieking girl's
                     doorway and wraps itself around the mouth of the short woman. Another does the same to the
@@ -246,6 +245,58 @@ public class Narrative{
                     are pulled into the girl's room. You watch as they both kick the hallway's floorboards, their feet
                     desperately searching for something to cling to. Finding nothing, the women are both dragged into the
                     girl's room. The door shuts. And then, silence.
+                    """;
+            case "scared" -> """
+                    Petrified at what you just witnessed, you look around to see if there were any fellow witnesses
+                    in the hallway. Seeing none, you hold your breath and tiptoe your way back into your room, praying
+                    that the floorboards won't betray you. They do not, and you lay down in bed. You close your eyes
+                    and attempt to sleep, but the scene that just unfolded projects itself onto the back of your
+                    eyelids. After tossing and turning for a few hours, you somehow manage to lull yourself to sleep.
+                    """;
+            case "continueDownstairs" -> """
+                    You continue to make your way downstairs. As you reach the top of the staircase, you hear something
+                    coming from the room adjacent: room 7. You notice this is the same door that the short woman was
+                    trying to enter earlier. As you step closer, you can make out the voice of a teenage girl, "All you
+                    had to do was tell the truth. Why did you lie? All you had to do was..." She repeats the two
+                    sentences over and over.
+                    
+                    Unnerved, you continue downstairs and pass Devlin at the desk. He is reading a large red book, his eyes
+                    scanning the pages at an inhuman rate. As you pass by, he flashes you a brief smile. You exit the inn
+                    and walk around towards the back, where you think you saw the figure.
+                    
+                    As you round the corner, you see that the old man that guided you earlier is tending to the horses
+                    in the stable. He does not seem to notice you yet, as he brushes the dirt and hay off of himself.
+                    After a brief glance around, he transforms right in front of your eyes into a young man. He then
+                    begins to move towards where you are hiding, presumably to enter the inn. As he approaches, he steps
+                    in front of one of the lanterns lighting the outside of the inn, illuminating his face in the
+                    darkness. You gasp, as you recognize the face. It is Devlin's.
+                    
+                    Do you walk towards this person?
+                    Enter Yes or No.
+                    """;
+            case "confrontShapeshifter" -> """
+                    You start walking towards the Devlin look-alike, trying to keep your expression as neutral as
+                    possible. Devlin's look-alike nods at you, and you think that this version likely doesn't know your
+                    name. Playing dumb, you say, "It's good to see you again, Devlin. You get around pretty fast.
+                    I could have sworn I just saw you behind the podium at the front entrance."
+                    
+                    The shapeshifter nods emphatically, the same way the real Devlin did when you first met him.
+                    """;
+            case "headbackInn" -> """
+                    Confused, you follow the shapeshifter back inside. Devlin is no longer behind the desk. The
+                    shapeshifter goes behind the desk, sits down, picks up the red book, and starts scanning through it
+                    with rapid speed. Too perplexed to even offer this version of Devlin a smile, you head back upstairs
+                    to your room.
+                    """;
+            case "headbackInn2" -> """
+                    You turn back around quietly, placing your feet carefully on the snow. You swing the inn's door open,
+                    and see that no one is behind the desk. Perplexed, you start walking upstairs, then turn around on
+                    the third step as you hear the front door open behind you. Glancing over your shoulder, you see
+                    that Devlin's look-alike has entered. He walks behind the desk, and begins to flip through the same
+                    red book that the other version of him was doing earlier. You bite your lip.
+                    """;
+            case "morningCall" -> """
+                    
                     """;
             default -> "";
         };
