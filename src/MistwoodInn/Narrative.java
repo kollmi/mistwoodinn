@@ -3,7 +3,7 @@ package MistwoodInn;
 public class Narrative{
     Narrative(){
     }
-    public String getNarrative (String a){
+    public String printNarrative(String a){
         return switch (a) {
             case "intro1" -> """
                     You are a traveler who has been riding along a winding, dusty
@@ -296,7 +296,79 @@ public class Narrative{
                     red book that the other version of him was doing earlier. You bite your lip.
                     """;
             case "morningCall" -> """
+                    You are awakened by the sound of paper sliding across the floorboards underneath your door. Your
+                    feet reluctantly slide out from underneath the covers, and you open the note. It reads:
+                    """;
+            case "morningMessage" -> """
+                    If you would, please join some of the other guests and myself in the lobby for some freshly prepared
+                    breakfast at your earliest convenience.
                     
+                    Forever yours,
+                    Devlin
+                    """;
+            case "skepticalMessage" -> """
+                    The events of last night still replaying in your head, you get dressed and make your way downstairs.
+                    You're not sure which room Devlin could easily prepare breakfast, but after stepping off the staircase,
+                    you notice an opening in the wall behind the desk that you were certain was not there before. You
+                    lower your head to pass through the opening. On the other side, a sprawling birchwood table has
+                    all sorts of pastries and fruit organized with a sort of off-putting precision. It is as if not a
+                    single item on the table is out of place or has been touched.
+                    """;
+            case "normalMessage" -> """
+                    Excited to see what Devlin has prepared for you, you get dressed and make your way downstairs.
+                    You're not sure where Devlin could have easily prepare breakfast, but after stepping off the staircase,
+                    you notice an opening in the wall behind the desk that you were certain was not there before. You
+                    lower your head to pass through the opening. On the other side, a sprawling birchwood table has
+                    all sorts of pastries and fruit organized with a sort of off-putting precision. It is as if not a
+                    single item on the table is out of place or has been touched.
+                    """;
+            case "patrice&OldMan" -> """
+                    You take a seat at the table across from Patrice. She flashes you a weary smile, the bags under
+                    her eyes telling their own story. Next to her sits the old man you saw last night. He waves at you
+                    and says, "Try the barley toast with jam! It's heavenly!"
+                    
+                    Sitting at the far end of the table is a brown-haired teenage girl, her arms crossed in defiance.
+                    She casts a petrifying glare in your direction, then lets out a soft "hmph". She adjusts the grey
+                    bow in her hair, which matches the same color lace tied around her neck.
+                    
+                    Devlin is standing behind the girl, preparing something on the stove. He briefly glances over his
+                    shoulder. "Oh! Looks like we're all here. Excellent. Well, not all of us..." Devlin trails off.
+                    "Ah! But that's why we're here, is it not?" He seemed pleasantly surprised with his segue.
+                    """;
+            case "patriceOnly" -> """
+                    You take a seat at the table across from Patrice. She flashes you a weary smile, the bags under
+                    her eyes telling their own story. Next to her sits the old man you saw before entering the inn yesterday.
+                    He waves at you and says, "Try the barley toast with jam! It's heavenly!"
+                    
+                    Sitting at the far end of the table is a brown-haired teenage girl, her arms crossed in defiance.
+                    She casts a petrifying glare in your direction, then lets out a soft "hmph". She adjusts the grey
+                    bow in her hair, which matches the same color lace tied around her neck.
+                    
+                    Devlin is standing behind the girl, preparing something on the stove. He briefly glances over his
+                    shoulder. "Oh! Looks like we're all here. Excellent. Well, not all of us..." Devlin trails off.
+                    "Ah! But that's why we're here, is it not?" He seemed pleasantly surprised with his own segue.
+                    """;
+            case "nobodyKnows" -> """
+                    You take a seat at the table across from a woman wearing a lavender jacket. Her face says that
+                    sleepless nights are the norm, the bags under her eyes telling the same story. Next to her sits the
+                    old man you saw before entering the inn yesterday. He waves at you and says, "Try the barley toast
+                    with jam! It's heavenly!"
+                    
+                    Sitting at the far end of the table is a brown-haired teenage girl, her arms crossed in defiance.
+                    She casts a petrifying glare in your direction, then lets out a soft "hmph". She adjusts the grey
+                    bow in her hair, which matches the same color lace tied around her neck.
+                    
+                    Devlin is standing behind the girl, preparing something on the stove. He briefly glances over his
+                    shoulder. "Oh! Looks like we're all here. Excellent. Well, not all of us..." Devlin trails off.
+                    "Ah! But that's why we're here, is it not?" He seemed pleasantly surprised with his own segue.
+                    """;
+            case "devlinReveal" -> """
+                    Devlin's expression quickly darkened. "Two of the guests are missing. It's not simply a case of
+                    them getting up and leaving at the end of the night - that happens all the time. The peculiar facts
+                    are these. First, all of their baggage is still in their rooms. Second, there is only one way in
+                    and out of Mistwood Inn: the front door. I was monitoring it the entire night. The windows do not
+                    open, nor had any of them been broken. Third, even though these two guests arrived separately,
+                    they vanished simultaneously.
                     """;
             default -> "";
         };
