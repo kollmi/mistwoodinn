@@ -26,7 +26,6 @@ public class mainStory {
             if (oldManAnswer.equals("Yes")) {
                 System.out.println(narrativeHost.printNarrative("oldManCheck"));
                 bag.add("Silver coin");
-                //if(bag.contains("Silver coin"));
                 System.out.println(narrativeHost.printNarrative("enterInn"));
                 break;
             }
@@ -349,5 +348,64 @@ public class mainStory {
         System.out.println(narrativeHost.printNarrative("devlinReveal"));
         System.out.println(name + ", I'll start with you. Did you notice anything strange last night?");
         //beginning of another conditional choice tree that varies based on events of previous night
+        //each tree will reach an ending of the game
+        while(true){
+            String answer = input.nextLine();
+            if (answer.equals("Yes")){
+                if (witness){
+                    System.out.println(narrativeHost.printNarrative("accuseDaria"));
+                    while(true){
+                        String dariaDecision = input.nextLine();
+                        if (dariaDecision.equals("1")){
+                            System.out.println(narrativeHost.printNarrative("vanishingEnding"));
+                            break;
+                        }
+                        else if (dariaDecision.equals("2")){
+                            if (patrice)System.out.println(narrativeHost.printNarrative("runAwayEnding"));
+                            else System.out.println(narrativeHost.printNarrative("runAwayEnding2"));
+                            break;
+                        }
+                        else {
+                            System.out.println("Incorrect input. Please enter 1 or 2.");
+                        }
+                    }
+                }
+                //tell Devlin about what you saw at the stables last night
+                else{
+                    System.out.println(narrativeHost.printNarrative("accuseShapeshifter"));
+                    System.out.println(narrativeHost.printNarrative("devlinTellsTruth"));
+                    if(bag.contains("Silver coin")){
+                        System.out.println(narrativeHost.printNarrative("trustworthyEnding"));
+                    }
+                    else{
+                        System.out.println(narrativeHost.printNarrative("distortedEnding"));
+                    }
+                }
+                break;
+            }
+            else if (answer.equals("No")){
+                //you lie that you saw nothing last night
+                if(witness){
+                    System.out.println(narrativeHost.printNarrative("patriceSkeptical"));
+                    System.out.println(narrativeHost.printNarrative("devlinTellsTruth"));
+                    if(bag.contains("Silver coin")){
+                        System.out.println(narrativeHost.printNarrative("beginningoftheEnding"));
+                    }
+                    else{
+                        System.out.println(narrativeHost.printNarrative("distortedEnding"));
+                    }
+                }
+                //true ending
+                else{
+                    System.out.println(narrativeHost.printNarrative("permStoneDiscussion"));
+                    System.out.println(narrativeHost.printNarrative("oldManExplanation"));
+                    System.out.println(narrativeHost.printNarrative("trueEnding"));
+                }
+                break;
+            }
+            else {
+                System.out.println("What? You're not making any sense. It's a Yes or No question.");
+            }
+        }
     }
 }

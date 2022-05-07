@@ -35,7 +35,7 @@ public class Narrative{
                     pair of footprints between the inn's door and the path: yours. However, you do
                     find a small silver coin half-buried in the soft layer of snow.
                                         
-                    Silver Coin has been added to your bag.
+                    <<Silver Coin has been added to your bag.>>
                                         
                     You return back to the entrance of the inn and open the door again.
                     """;
@@ -363,12 +363,213 @@ public class Narrative{
                     "Ah! But that's why we're here, is it not?" He seemed pleasantly surprised with his own segue.
                     """;
             case "devlinReveal" -> """
-                    Devlin's expression quickly darkened. "Two of the guests are missing. It's not simply a case of
+                    Devlin's expression quickly darkens. "Two of the guests are missing. It's not simply a case of
                     them getting up and leaving at the end of the night - that happens all the time. The peculiar facts
                     are these. First, all of their baggage is still in their rooms. Second, there is only one way in
                     and out of Mistwood Inn: the front door. I was monitoring it the entire night. The windows do not
                     open, nor had any of them been broken. Third, even though these two guests arrived separately,
-                    they vanished simultaneously.
+                    they vanished simultaneously."
+                    """;
+            case "accuseDaria" -> """
+                    "I saw everything. Everything." The girl glares at you maliciously, but says nothing. You continue.
+                    "There were two guests would not stop harassing her, almost talking about her like she was some sort
+                    of dumb plaything. They were talking about bringing her to some academy..."
+                    
+                    "They wanted to force me to use my Gift as part of their Military Academy," the girl says. "It's
+                    not the first time they've come after me. They wanted to see my Gift in action, so I showed them..."
+                    she trails off.
+                    
+                    Enter 1: Interject and explain exactly what you saw happen last night
+                    Enter 2: Say nothing
+                    """;
+            case "vanishingEnding" -> """
+                    You think back to what you saw last night - the tendrils of fog shooting out from the girl's room,
+                    almost with a mind of their own, taking hold of the two women. "You mean you killed them,"
+                    you say.
+                    
+                    The girl begins to laugh softly. "Kill?! No, no. What you saw was something entirely different.
+                    You see, my Gift just makes people disappear." She begins to laugh louder, and she does, fog begins
+                    to surround her body. After a few seconds, the fog begins to coalesce into two human-shaped forms:
+                    a short woman and a sturdy woman. They writhe uncontrollably. Everyone around the table takes a
+                    step back in horror. Then, before you can react quick enough, the formless right hand of the
+                    shorter fog figure reaches out towards you.
+                    
+                    Her foggy hand wraps around your own, sending a cold sensation throughout your body. Your entire body
+                    becomes paralyzed. You can only watch as your own body begins to transform into ethereal particles,
+                    molecules being rearranged at the molecular level.
+                    
+                    However, you remain entirely calm. For this girl has no idea of your Gift. She watches as you begin
+                    to disappear faster than the fog that is overtaking you. Soon, you are in a completely different
+                    room. You sit up straight in your chair and reflect on how many times your Gift - the ability
+                    to create a clone of yourself and control it remotely - has saved your life.
+                    
+                    -------------------------------------------- THE END --------------------------------------------
+                    You have reached the end of this storyline. This is the "Vanishing Ending". There are multiple endings
+                    to the game, only one of which is the "True Ending" (not this one! sorry). Armed with your
+                    knowledge from this playthrough, go forth again and find the True Ending!
+                    """;
+            case "runAwayEnding" -> """
+                    "I saw what you did to them!" Patrice speaks up. "You're a killer. Those women were ensnared by some
+                    sort of fog creature. And I can only imagine you must have created that!"
+                    
+                    The girl begins to laugh softly. "Kill?! No, no. What you saw was something entirely different.
+                    You see, my Gift just makes people...disappear." She begins to laugh louder, and she does, fog begins
+                    to surround her body. After a few seconds, the fog begins to coalesce into two human-shaped forms:
+                    a short woman and a sturdy woman. They writhe uncontrollably. Everyone around the table takes a
+                    step back in horror.
+                    
+                    The girl snaps, and the shorter fog figure extends its formless hand towards Patrice. You watch
+                    as particle by particle of Patrice's body is transformed into an ethereal fog. To your surprise,
+                    Patrice begins laughing, tears springing to her eyes. "Ah! To live again. How exciting! Thank you,
+                    young woman, for reminding me what it is like."
+                    
+                    You exchange glances with Devlin and the old man. Your eyes conversate briefly, then the three of you
+                    simultaneously run out of the inn, not looking back even once.
+                    
+                    -------------------------------------------- THE END --------------------------------------------
+                    You have reached the end of this storyline. This is the "Runaway Ending". There are multiple endings
+                    to the game, only one of which is the "True Ending" (not this one! sorry). Armed with your
+                    knowledge from this playthrough, go forth again and find the True Ending!
+                    """;
+            case "runAwayEnding2" -> """
+                    "I saw what you did to them!" The woman wearing the lavender coat speaks up. "You're a killer.
+                    Those women were ensnared by some sort of fog creature. And I can only imagine you must have
+                    created it!"
+                    
+                    The girl begins to laugh softly. "Kill?! No, no. What you saw was something entirely different.
+                    You see, my Gift just makes people...disappear." She begins to laugh louder, and she does, fog begins
+                    to surround her body. After a few seconds, the fog begins to coalesce into two human-shaped forms:
+                    a short woman and a sturdy woman. They writhe uncontrollably. Everyone around the table takes a
+                    step back in horror.
+                    
+                    The girl snaps, and the shorter fog figure extends its formless hand towards Patrice. You watch
+                    as particle by particle of the woman's body is transformed into an ethereal fog. To your surprise,
+                    Patrice begins laughing, tears springing to her eyes. "Ah! To live again. How exciting! Thank you,
+                    young woman, for reminding me what it is like."
+                    
+                    You exchange glances with Devlin and the old man. Your eyes conversate briefly, then the three of you
+                    simultaneously run out of the inn, not looking back even once.
+                    
+                    -------------------------------------------- THE END --------------------------------------------
+                    You have reached the end of this storyline. This is the "Runaway Ending". There are multiple endings
+                    to the game, only one of which is the "True Ending" (not this one! sorry). Armed with your
+                    knowledge from this playthrough, go forth again and find the True Ending!
+                    """;
+            case "accuseShapeshifter" -> """
+                    "Actually, Devlin, I did see something strange," you respond, maintaining eye contact with the
+                    innkeeper. "Last night, I went to the stables to go check on my horse. Then, right in front of my
+                    eyes, I saw this old man here," you gesture towards the old man sitting next you, "transform
+                    from himself into you."
+                    
+                    Devlin and the old man do not flinch. "I can explain why you saw what you saw," Devlin says.
+                    """;
+            case "devlinTellsTruth" -> """
+                    Devlin stands up. "The truth is, I haven't been perfectly honest with you, or anyone here, about
+                    my Gift," Devlin says. "I do not, in fact, have an encyclopedic memory. My actual gift is much
+                    more powerful than that." He pauses. "I am able to control what people see for very brief moments
+                    of time. However, there are three conditions that I have to fulfill for me to do that.
+                    
+                    "First, I have to pick a central 'home base' to focus my powers on. In other words, I cannot use
+                    my powers outside of Mistwood Inn. Second, I can only change peoples' perception of things who are
+                    within this inn and the immediate surrounding forest. Third, I can only control the thoughts of one
+                    person at a time."
+                    
+                    You begin to second guess everything you've seen since you arrived at Mistwood Inn. How extensive
+                    is Devlin's power? Are the people sitting around the kitchen table with you actually there?
+                    """;
+            case "distortedEnding" -> """
+                    You blink once, and suddenly you are standing in the middle of the birchwood forest. Behind you,
+                    you hear a voice say, "Lost, are we? Not the first, not the last. Please, follow me. The Mistwood Inn
+                    is not much farther ahead. Best we get there before the snow picks up." You search the old man's
+                    face for any signs that this is the same man that you were just sitting next to at the kitchen
+                    table seconds ago. A knowing twinkle in his right eye glints with a certain self-awareness.
+                    
+                    "Devlin and I don't trust you, traveler. Next time, don't forget about me." With that, the old man
+                    turns and walks back into the forest, leaving you unsure of where to go next.
+                    
+                    -------------------------------------------- THE END --------------------------------------------
+                    You have reached the end of this storyline. This is the "Distorted Ending". There are multiple endings
+                    to the game, only one of which is the "True Ending" (not this one! sorry). Armed with your
+                    knowledge from this playthrough, go forth again and find the True Ending!
+                    """;
+            case "beginningoftheEnding" -> """
+                    "All of this is for good reason, though. You see, the truth is that Prince Dallio does pass through
+                    this forest quite often, preferring to change appearances at will. To protect his identity, he
+                    enlisted me to disorient anyone who seems suspicious after I tell them about his passing
+                    through here. However, we don't think you're one of those people. You're after something else entirely.
+                    The Permanence Stone."
+                    
+                    Seeing your startled reaction, Devlin says, "Not to worry. We have no intent in stopping your
+                    pursuit. In fact, we are a sort of guardian for the stone. However, the Stone does not show itself
+                    to all who desire it. What we'll have to do is the following. I will use my powers of distortion to
+                    make it seem like you are outside the inn once again. Jeb," Devlin gestures to the old man, "will
+                    make sure to guide you to the Inn once again. You will remember nothing from before, although I sense
+                    that, for some reason, that won't be a problem for you. So let me say this - once you are inside the Inn,
+                    try to do as little as possible. The Stone should present itself to you in that case."
+                    
+                    You nod, and only have a few seconds to make sense of what Devlin said before you find yourself
+                    in the birchwood forest once again.
+                    
+                    -------------------------------------------- THE END --------------------------------------------
+                    You have reached the end of this storyline. This is the "Beginning of the Ending". There are multiple
+                    endings to the game, only one of which is the "True Ending" (not this one! sorry). Armed with your
+                    knowledge from this playthrough, go forth again and find the True Ending!
+                    """;
+            case "patriceSkeptical" -> """
+                    Patrice glances at you suspiciously. "You didn't strike me as a liar at first," she says
+                    to you.
+                    
+                    You hold your ground. "How would you know that I'm lying?" you retort.
+                    
+                    Patrice's face suddenly goes pale, as it dawns on her that she would have to be the one to explain
+                    what you both saw. Fearing that she'd become another target of the girl, she quickly gets up from the table
+                    and exits the inn. The remaining people at the table exchange glances, but nothing is said.
+                    """;
+            case "permStoneDiscussion" -> """
+                    Devlin nods, then proceeds to look at the other people around the table. "Anyone else notice anything
+                    awry last evening?"
+                    
+                    No one says a word.
+                    
+                    "Well, I'll have to do some investigation on my own, then. I'm sorry to have worried any of you."
+                    
+                    "Wait," says the girl, her tone commanding. "I want to have a discussion about the Permanence Stone."
+                    
+                    The old man and Devlin exchange worried glances. "What about it?" Devlin asks.
+                    
+                    "I know you use it, old man. I saw you disappear when this traveler," she says, gesturing to you,
+                    "walked into the inn before the storm rolled in. But you shouldn't still be able to use your Gift at your
+                    age. So please, tell us where it is. I don't want have to resort to...other means to obtain it."
+                    """;
+            case "oldManExplanation" -> """
+                    "So I've been found out. Very perceptive of you, young lady," the old man says with a wry smile.
+                    "I will tell you where the stone is. But please promise me that you won't cause harm to innocent
+                    people with that Gift of yours anymore," the old man says with a knowing eye.
+                    
+                    The girl nods. The old man continues, "There is, in fact, no such thing as the Permanence Stone.
+                    Many acknowledge the fact that peoples' Gifts expire over time, but no one ever questions why. I
+                    have spent my entire life searching for that reason. And it was not until I met a young boy named
+                    Prince Dallio when I found my answer. The young prince was so full of life, so blissful and carefree.
+                    He was scared of growing older, as he knew that it meant he would lose his Gift. I had already
+                    begin to see mine ebb away.
+                    
+                    But there was something about the prince's candor and desire to stay a child that I reflected on.
+                    I began to resist the mindset that my Gift had ebbed away due to my physical age. I was still
+                    perfectly capable of incorporating youthful energy into my every day life. Over time, I began to
+                    notice that I was able to use my Gift in small bursts. I was overcome with joy."
+                    
+                    You are skeptical of the old man's tale. A simple shift in mindset is all it takes to keep one's
+                    Gift forever. You look closer at the old man's face, though, and see how content he seems. It is
+                    a genuine sort of happiness, not a feigned one steeped in depression.
+                    
+                    You deactivate your Gift - the ability to create an exact clone of yourself and control it remotely -
+                    and sit up straight in your chair, feeling a surge of inspiration and inquisitiveness you haven't
+                    felt in years.
+                    """;
+            case "trueEnding" -> """
+                    -------------------------------------------- THE END --------------------------------------------
+                    Congratulations! You have reached the True Ending. Mistwood Inn thanks you for staying with us.
+                    We hope you enjoyed our hospitality.
                     """;
             default -> "";
         };
